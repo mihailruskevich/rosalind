@@ -1,3 +1,5 @@
+from itertools import product
+
 
 def increment(x, l):
     i = len(x) - 1
@@ -16,10 +18,15 @@ def permutations(a, n):
     return res
 
 
+def permutations_2(a, n):
+    return map(''.join, product(*[a] * n))
+
+
 file = open('alphabet.txt')
 alphabet = next(file).rstrip().split(' ')
 size = int(next(file))
 
-result = permutations(alphabet, size)
+# result = permutations(alphabet, size)
+result = permutations_2(alphabet, size)
 for s in result:
     print(s)
