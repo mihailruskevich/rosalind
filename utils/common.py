@@ -15,3 +15,11 @@ def reverse_complement_2(dna):
 def gc_content(dna):
     gc_seq = [nt for nt in dna if nt in 'GC']
     return float(len(gc_seq)) / len(dna)
+
+
+def int_list(str_value):
+    return list(map(int, str_value.split(' ')))
+
+
+def float_list(str_value):
+    return list(map(float, str_value.split(' ')))
