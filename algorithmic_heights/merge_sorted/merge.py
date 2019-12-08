@@ -1,3 +1,4 @@
+from utils.arrays import merge
 from utils.common import int_list
 
 
@@ -10,19 +11,6 @@ def merge_lists(a, b, c):
         merge_lists(ls[1:], gt, c)
     else:
         c += a if len(a) else b
-
-
-def merge(a, b):
-    i, j, c = 0, 0, []
-    while i < len(a) and j < len(b):
-        if a[i] < b[j]:
-            c.append(a[i])
-            i += 1
-        else:
-            c.append(b[j])
-            j += 1
-    c += a[i:] if i < len(a) else b[j:]
-    return c
 
 
 _, line1, _, line2 = open('arrays.txt')
