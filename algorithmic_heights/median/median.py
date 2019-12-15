@@ -1,17 +1,7 @@
 from random import randint
 
+from utils.arrays import equality_partition
 from utils.common import int_list
-
-
-def equality_partition(a, x, i, j):
-    while i < j:
-        while a[i] == x:
-            i += 1
-        while a[j] != x:
-            j -= 1
-        if i < j:
-            a[i], a[j] = a[j], a[i]
-    return i
 
 
 def partition(a, x, i, j):
