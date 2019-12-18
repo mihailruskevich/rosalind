@@ -4,7 +4,7 @@ from utils.fasta import fasta_sequences
 
 
 def k_mer_list(a):
-    return [''.join(mer) for mer in product(*[a] * 4)]
+    return [''.join(mer) for mer in product(a, repeat=4)]
 
 
 def count_k_mer(seq, k_mer):
