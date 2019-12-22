@@ -1,0 +1,7 @@
+1)In order to find motif use
+http://meme-suite.org/tools/meme
+2)Input corresponding proteins
+3)Input needed settings(min width 20, search in strand)
+4)Needed regular expression can be found in text results representation
+DLWWCWIPVHK[NK]PHSFLKTWSPAAGHRGWQFDHNFF
+5)Motifs logo can be found in HTML results representation
