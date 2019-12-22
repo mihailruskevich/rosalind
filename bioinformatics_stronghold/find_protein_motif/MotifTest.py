@@ -1,5 +1,5 @@
 import unittest
-from find_protein_motif.motif import matches
+from bioinformatics_stronghold.find_protein_motif.motif import matches
 
 
 class MotifTest(unittest.TestCase):
