@@ -23,3 +23,7 @@ def int_list(str_value):
 
 def float_list(str_value):
     return list(map(float, str_value.split(' ')))
+
+
+def hamming(p, q):
+    return sum(1 for x, y in zip(p, q) if x != y)

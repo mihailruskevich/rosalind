@@ -1,8 +1,5 @@
 from Bio import SeqIO
-
-
-def d(s, t):
-    return len([1 for x, y in zip(s, t) if x != y])
+from utils.common import hamming as d
 
 
 def create_matrix(seq_list):

@@ -1,6 +1,6 @@
 import unittest
 
-from utils.common import reverse_complement, reverse_complement_2, int_list, gc_content, float_list
+from utils.common import reverse_complement, reverse_complement_2, int_list, gc_content, float_list, hamming
 
 
 class CommonsTest(unittest.TestCase):
@@ -19,3 +19,8 @@ class CommonsTest(unittest.TestCase):
 
     def test_float_list(self):
         self.assertListEqual([9.1, 7.3, 5.5, 3.7, 1.9], float_list('9.1 7.3 5.5 3.7 1.9'))
+
+    def test_hamming(self):
+        p = 'ACGTTGAC'
+        q = 'ACATTCAT'
+        self.assertEqual(3, hamming(p, q))
