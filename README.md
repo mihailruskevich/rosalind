@@ -8,4 +8,4 @@ Solutions of tasks from **Rosalind** - platform for learning bioinformatics.
 * [Country Statistics](http://rosalind.info/statistics/countries/lv)
 
 # Prerequisites
-* Python 3.7.4
+* Python 3.8.1+
