@@ -31,3 +31,7 @@ def equality_partition(a, x, i, j):
         if i < j:
             a[i], a[j] = a[j], a[i]
     return i
+
+
+def stringify(a):
+    return ' '.join(map(str, a))
