@@ -17,8 +17,8 @@ def gc_content(dna):
     return float(len(gc_seq)) / len(dna)
 
 
-def int_list(str_value):
-    return list(map(int, str_value.split(' ')))
+def int_list(str_value, sep=' '):
+    return list(map(int, str_value.split(sep)))
 
 
 def float_list(str_value):
